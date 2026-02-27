@@ -42,9 +42,10 @@ export const login = async(req, res) => {
                     fullname: user.fullname,
                     email: user.email,
                 },
-            });              
+            });
         }
-    } catch (error) {       
+    } catch (error) {
+
         console.log("Error: " + error.message);
         res.status(500).json({ message: "Internal server error" });
     }
