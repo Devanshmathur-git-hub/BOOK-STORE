@@ -9,6 +9,7 @@ const bookSchema = mongoose.Schema({
 });
 const Book = mongoose.model("Book", bookSchema);
 
+
 export default Book;
 // const book1 = new Book({
 //     name: "Book 1",
